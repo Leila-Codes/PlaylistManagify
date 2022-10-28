@@ -1,0 +1,9 @@
+div#playlist-objects-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.duplicate-song {
+    border-left: 2px solid orangered;
+    color: orange !important;
+}

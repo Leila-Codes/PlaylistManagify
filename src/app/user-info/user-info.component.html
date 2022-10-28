@@ -1,0 +1,17 @@
+<!-- <div class="border rounded my-3 flex w-96 items-center p-1">
+
+
+</div> -->
+<section>
+    <section class="content">
+        <div *ngIf="user !== undefined">
+            <img class="rounded-xl" src="{{user.images[0].url}}" width="75px" height="75px">
+        </div>
+        <div id="userReadout">
+            <p style="margin: 2px;" class="italic">Welcome back ...</p>
+            <h1 style="margin: 2px;" class="text-4xl">
+                {{ user?.display_name }}
+            </h1>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,19 @@
+<div id="playlist-objects-container">
+    <section *ngFor="let plist of playlists">
+        <section class="title">
+            {{ plist.name }}
+            -
+            <small>By <span class="primary">{{ plist.owner.display_name }}</span></small>
+        </section>
+        <section class="content">
+            <div class="list-group" [@glitchIn]="plist.tracks.items.length">
+                <div class="list-group-item" *ngFor="let song of plist.tracks.items"
+                    [ngClass]="{'duplicate-song': song.track.duplicated}">
+                    <a href="{{ song.track.external_urls!.spotify }}" target="_blank">
+                        {{ song.track.name }}
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>

@@ -1,0 +1,22 @@
+.plist-results {
+    list-style: none;
+}
+
+li {
+    padding: 5px 8px;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+li:hover {
+    text-shadow: 1px 2px 2px white;
+    padding: 7px 12px;
+    font-size: 110%;
+
+    background: #315170;
+}
+
+/* input#playlistSearch {
+
+} */

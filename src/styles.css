@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+/* @tailwind variants; */
+
+
+/*
+:root {
+  --spotify-green: #1DB954;
+  --spotify-black: #191414;
+
+  --primary: #9cd8ff;
+  --danger: #ff1a4f;
+  --light: #eefffe;
+  --dark: #413e3e;
+  --dark-2: #282727;
+}
+
+html, body {
+  width: 100%;  height: 100%;
+  margin: 0; padding: 0;
+}
+
+body {
+  background: var(--dark-2);
+}
+*/
+
+section,
+section.content {
+  border: none !important;
+}

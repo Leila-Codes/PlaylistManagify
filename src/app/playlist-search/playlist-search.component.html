@@ -1,0 +1,19 @@
+<!-- <p>playlist-search works!</p> -->
+<section>
+    <section class="title">
+        Add a Playlist...
+    </section>
+    <section class="content">
+        <div style="margin: 5px 30px;">
+            <p>Search for a Playlist...</p>
+            <input class="text-center" type="text" placeholder="Search for a playlist..." name="playlistSearch"
+                id="playlistSearch" [formControl]="playlistNameEntry" (input)="performSearch()">
+
+            <div class="list-group">
+                <div class="list-group-item" *ngFor="let plist of listResults" (click)="selectPlaylist(plist.id)">
+                    {{ plist.name }}
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

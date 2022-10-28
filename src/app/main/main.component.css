@@ -1,0 +1,16 @@
+div.container {
+    display: grid;
+
+    grid-template-rows: 100px auto 100px;
+    grid-row-gap: 50px;
+}
+
+main {
+    margin: 20px 60px;
+}
+
+app-user-info {
+    justify-self: end;
+
+    width: 25%;
+}

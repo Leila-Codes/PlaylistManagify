@@ -1,0 +1,25 @@
+<!-- <div class="flex flex-col login-window">
+    <h1 class="text-5xl my-2">Welcome</h1>
+</div> -->
+
+<section>
+    <section class="header">
+        Welcome
+    </section>
+    <section class="content">
+        <p class="my-3">Welcome to the Playlist Management Application. Before you can manage your playlists, you'll
+            have to
+            login below.</p>
+        <button class="btn-fill primary" (click)="openSpotifyLogin()" *ngIf="!isLoading">
+            <fa-icon [icon]="spotifyIcon"></fa-icon>
+            Login with Spotify
+        </button>
+
+        <div *ngIf="isLoading" class="flex justify-center">
+            <div class="w-min fa-spin mx-0">
+                <fa-icon [icon]="loadingIcon" class="fa-3x"></fa-icon>
+            </div>
+
+        </div>
+    </section>
+</section>

@@ -1,0 +1,29 @@
+div.login-window {
+    animation: window-open .5s forwards;
+}
+
+@keyframes window-open {
+    0% {
+        opacity: 0;
+        transform: skewX(10deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.fa-spin {
+    transform-origin: 50% 50%;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
